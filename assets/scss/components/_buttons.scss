@@ -1,0 +1,17 @@
+// Buttons
+.btn{
+    min-height: 50px;
+    padding: 8px 20px;
+    font-family: $inter;
+    transition: all 0.3s ease-in-out;
+
+    // btn primary
+    &.btn-primary{
+        background-color: $primary;
+        border-color: $primary;
+        &:hover{
+            background-color: transparent;
+            color: $primary;
+        }
+    }
+}

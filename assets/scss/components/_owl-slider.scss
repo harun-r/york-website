@@ -8,7 +8,9 @@
         max-width: 1300px;
     }
     @media (max-width:768px) {
-        margin: -190px auto auto auto !important;
+        position: absolute;
+        top: 38%;
+        padding-left: 26px;
     }
 
     .owl-dot span {

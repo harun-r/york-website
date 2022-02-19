@@ -1,7 +1,7 @@
-.service-header{
+.big-header{
     padding: 120px 0;
     h3{
-        @include font-size(85);
+        @include font-size(80);
         line-height: 80px;
         font-family: $titillium;
         color: $primary;
@@ -9,6 +9,12 @@
         margin: 0;
         position: relative;
         z-index: 99;
+        @media (max-width:768px) {
+            @include font-size(50);
+            line-height: 50px;
+            padding-top: 36px;
+            margin-bottom: 40px;
+        }
     }
 }
 // common-header
@@ -18,7 +24,7 @@
         padding-left: 50px;
         .hint-title{
             @include absolute(0,null,null,0);
-            @include font-size(85);
+            @include font-size(80);
             line-height: 80px;
             font-family: $titillium;
             font-weight: 700;
@@ -27,6 +33,9 @@
             -webkit-text-stroke-width: 0.5px;
             -webkit-text-stroke-color: $secondary;
             opacity: 0.8;
+            @media (max-width:768px) {
+                @include font-size(60);
+            }
         }
         .hint-subtitle{
             @include font-size(15);
@@ -39,7 +48,11 @@
                 -webkit-transform-origin: center;
                 -ms-transform-origin: center;
                     transform-origin: center;
-            
+
+            @media (max-width:768px) {
+                @include font-size(12);
+                left: -45px;
+            }
         }
     }
 }

@@ -35,6 +35,12 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
+// Grid Overwrite
+.row {
+    @media (min-width: 1440px) {
+        --bs-gutter-x: 3.5rem;
+    }
+}
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
