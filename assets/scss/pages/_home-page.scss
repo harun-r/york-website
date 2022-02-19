@@ -117,6 +117,9 @@
 .rentals-section{
     padding-bottom: 100px;
     .rental-card{
+        @media (max-width:768px) {
+            margin-bottom: 30px;
+        }
         &--img{
             border-radius: 15px;
             overflow: hidden;
@@ -135,6 +138,9 @@
                 font-weight: 700;
                 img{
                     margin-right: 20px;
+                }
+                @media (max-width:768px) {
+                    @include font-size(22);
                 }
             }
             p{

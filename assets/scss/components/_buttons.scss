@@ -4,7 +4,11 @@
     padding: 8px 20px;
     font-family: $inter;
     transition: all 0.3s ease-in-out;
-
+    @media (max-width:768px) {
+        min-height: 40px;
+        padding: 6px 15px;
+        @include font-size(14);
+    }
     // btn primary
     &.btn-primary{
         background-color: $primary;
