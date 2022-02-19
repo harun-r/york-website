@@ -1,0 +1,44 @@
+// 
+.form-group{
+    margin-bottom: 12px;
+    .form-label,
+    .form-check-label{
+        @include font-size(14);
+        color: $gray-400;
+    }
+    .form-control,
+    .form-select{
+        @include font-size(14);
+    }
+    .pick-up-date-time,
+    .drop-of-date-time{
+        background-image: url('../images/date-time.png');
+        background-repeat: no-repeat;
+        background-position: 95% center;
+        cursor: pointer;
+    }
+    &.map-icon{
+        .form-control{
+            background-image: url('../images/map-marker.png');
+            background-repeat: no-repeat;
+            background-position: 95% center;
+            padding-right: 26px;
+        }
+    }
+    &.info-icon{
+        .form-control{
+            background-image: url('../images/info.png');
+            background-repeat: no-repeat;
+            background-position: 95% center;
+            padding-right: 26px;
+        } 
+    }
+    &.car-icon{
+        .form-control{
+            background-image: url('../images/car.png');
+            background-repeat: no-repeat;
+            background-position: 95% center;
+            padding-right: 26px;
+        } 
+    }
+}

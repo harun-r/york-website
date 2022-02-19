@@ -1,0 +1,87 @@
+//font size
+.font-s-17{
+  @include font-size(17)
+}
+.font-s-20{
+  @include font-size(20)
+}
+.font-s-24{
+  @include font-size(24)
+}
+.font-s-28{
+  @include font-size(28)
+}
+.font-s-32{
+  @include font-size(32)
+}
+.font-s-35{
+  @include font-size(35)
+}
+.font-s-38{
+  @include font-size(38)
+}
+.font-s-40{
+  @include font-size(40)
+}
+.font-s-45{
+  @include font-size(40)
+}
+.font-s-50{
+  @include font-size(50)
+}
+.font-s-70{
+  @include font-size(70)
+}
+.font-s-135{
+  @include font-size(135)
+}
+.font-s-170{
+  @include font-size(170)
+}
+//font weight
+.font-w-thin{
+  font-weight: 100;
+}
+.font-w-light{
+  font-weight: 300;
+}
+.font-w-normal{
+  font-weight: 400;
+}
+.font-w-medium{
+  font-weight: 400;
+}
+.font-w-sm-bold{
+  font-weight: 600;
+}
+.font-w-bold{
+  font-weight: 700;
+}
+.font-w-black{
+  font-weight: 900;
+}
+//Fonts Color
+
+
+//BG Color
+
+
+//Custom Button Color
+
+//Z index
+
+
+//Height
+
+//Min height
+
+//Max width
+
+
+//Opacity
+
+
+//
+.cursor-pointer{
+  cursor: pointer;
+}

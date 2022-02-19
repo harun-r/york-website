@@ -1,0 +1,29 @@
+.dropdown{
+    .dropdown-toggle{
+        display: flex;
+        align-items: center;
+        &::after {
+            margin-left: 6px;
+            content: "\e5cf";
+            border: 0;
+            font-family: $material;
+            @include font-size(16);
+        }
+    }
+    .dropdown-menu {
+        padding:0;
+        border-radius: 4px;
+        overflow: hidden;
+        .dropdown-item {
+            @include font-size(12);
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $text-color;
+            padding: 8px 16px;
+            &:hover{
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
