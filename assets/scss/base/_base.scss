@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    @include list-style;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.btn-check:focus+.btn, 
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.form-control,
+.form-select{
+    &:focus{
+        box-shadow: none;
+        border-color: $secondary;
+    }
+}
+body{
+    font-family: $lato;
+    @include font-size(16);
+    font-weight: 400;
+    line-height: 1.4;
+    color: $text-color;
+    background-color: $white;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f1f1f1;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    border: 3px solid #ccc
+}

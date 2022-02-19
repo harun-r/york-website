@@ -1,0 +1,7 @@
+// Line Border
+.line-border{
+  @include size(1px, 12px);
+  background-color: $primary;
+  display: block;
+  margin: 0 15px;
+}
