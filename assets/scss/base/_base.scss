@@ -42,7 +42,7 @@ body{
 
 // Grid Overwrite
 .row {
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
         --bs-gutter-x: 3.5rem;
     }
 }
