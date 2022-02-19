@@ -1,0 +1,45 @@
+.service-header{
+    padding: 120px 0;
+    h3{
+        @include font-size(85);
+        line-height: 80px;
+        font-family: $titillium;
+        color: $primary;
+        font-weight: 700;
+        margin: 0;
+        position: relative;
+        z-index: 99;
+    }
+}
+// common-header
+.common-header{
+    .common-header-inner{
+        position: relative;
+        padding-left: 50px;
+        .hint-title{
+            @include absolute(0,null,null,0);
+            @include font-size(85);
+            line-height: 80px;
+            font-family: $titillium;
+            font-weight: 700;
+            color: $secondary;
+            -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: $secondary;
+            opacity: 0.8;
+        }
+        .hint-subtitle{
+            @include font-size(15);
+            @include absolute(55px,null,null,-60px);
+            color: $secondary;
+            display: block;
+            -webkit-transform: rotate(-90deg) translate(-50%);
+            -ms-transform: rotate(-90deg) translate(-50%);
+                transform: rotate(-90deg) translate(-50%);
+                -webkit-transform-origin: center;
+                -ms-transform-origin: center;
+                    transform-origin: center;
+            
+        }
+    }
+}

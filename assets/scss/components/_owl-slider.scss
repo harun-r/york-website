@@ -1,0 +1,29 @@
+// Owl Customize
+.owl-theme .owl-dots {
+    margin: -80px auto auto auto !important;
+    max-width: 1120px;
+    display: flex;
+    position: relative;
+    @media (min-width:1440px) {
+        max-width: 1300px;
+    }
+    @media (max-width:768px) {
+        margin: -190px auto auto auto !important;
+    }
+
+    .owl-dot span {
+        @include size(30px, 3px);
+        background: $secondary;
+        border-radius: 5px;
+        &:hover {
+            background: $white;
+        }
+    }
+    .owl-dot{
+        &.active{
+            span{
+                background: $primary;
+            }
+        }
+    }
+}
