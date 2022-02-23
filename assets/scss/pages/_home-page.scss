@@ -149,3 +149,21 @@
         }
     }
 }
+
+// save-section
+.save-section{
+    background-image: url("../images/save-sec-banner.png");
+    background-size: cover;
+    @include size(100%, 700px);
+    @include display-flex(flex);
+    @include align-items(center);
+
+    h3{
+        @include font-size(52);
+        font-family: $titillium;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 30px;
+    }
+
+}

@@ -24,4 +24,13 @@
             color: $primary;
         }
     }
+    &.btn-secondary{
+        background-color: $secondary;
+        border-color: $secondary;
+        &:hover{
+            background-color: transparent;
+            color: $white;
+            border-color: $white;
+        }
+    }
 }
