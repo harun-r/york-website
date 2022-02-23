@@ -154,16 +154,22 @@
 .save-section{
     background-image: url("../images/save-sec-banner.png");
     background-size: cover;
+    background-position: center right;
     @include size(100%, 700px);
     @include display-flex(flex);
     @include align-items(center);
-
+    @media (max-width:991px) {
+        @include size(100%, 400px);
+    }
     h3{
         @include font-size(52);
         font-family: $titillium;
         font-weight: 700;
         color: $white;
         margin-bottom: 30px;
+        @media (max-width:991px) {
+            @include font-size(24);
+        }
     }
 
 }
