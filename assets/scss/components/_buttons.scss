@@ -33,4 +33,31 @@
             border-color: $white;
         }
     }
+
+    &.btn-book{
+        @include align-items(center);
+        padding: 0;
+        color: $secondary;
+        @include font-size(16);
+        font-weight: 500;
+        .material-icons{
+            margin-left: 0px;
+            font-weight: 300;
+            font-size: 14px;
+        }
+        .btn-icon{
+            @include size(25px,25px);
+            min-width: 25px;
+            background-color: $secondary;
+            border-radius: 50px;
+            color: $white;
+            display: block;
+            margin-left: 5px;
+            font-weight: 300;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }

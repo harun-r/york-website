@@ -29,3 +29,22 @@
         }
     }
 }
+.owl-carousel .owl-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: $primary;
+    border-color: $primary;
+}
