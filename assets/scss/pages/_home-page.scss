@@ -424,7 +424,10 @@
            position: relative;
            .suggets-img{
                @include size(100%,100%);
-               object-fit: cover;
+               img{
+                @include size(100%,100%);
+                object-fit: cover;
+               }
            }
            .suggets-content{
             @include size(100%,100%);
@@ -548,5 +551,94 @@
                 }
             }
         }
+    }
+}
+// feedback-section
+.feedback-section{
+    padding: 120px 0;
+    @media (max-width:991px) {
+        padding: 40px 0;
+    }
+    .common-header-inner .hint-subtitle {
+        left: -28px;
+        
+    }
+    .feedback-inner{
+        margin-top: -200px;
+        @media (max-width:991px) {
+            margin-top: 0px;
+        }
+    }
+    .slider-item{
+        position: relative;
+        .slider-inner{
+            margin-top: 250px;
+            padding:60px;
+            position: relative;
+            background-image: url('../images/map-dot.png');
+            background-size: contain;
+            @media (max-width:991px) {
+                margin-top: 60px;
+                padding:60px 0 0 0;
+            }
+            .quote{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 120px;
+                color: $gray-400;
+                opacity: 0.2;
+            }
+            p{
+                font-size: 24px;
+                @media (max-width:991px) {
+                    font-size: 16px;
+                }
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+                font-family: $inter;
+                margin: 0;
+                @media (max-width:991px) {
+                    font-size: 16px;
+                }
+            }
+            .stars{
+                span{
+                    color: $primary;
+                    font-size: 16px;
+                }
+            }
+            a{
+                color: $primary;
+                display: inline-block;
+                text-decoration: underline;
+            }
+        }
+        .feedback-img{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background-color: #fff;
+            clip-path: polygon(59% 0, 100% 0, 100% 100%, 18% 100%, 13% 70%);
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top right;
+            }
+            @media (max-width:991px) {
+                position: static;
+                width: 100%;
+            }
+        }
+    }
+    .owl-carousel .owl-nav {
+        width: 50%;
     }
 }

@@ -74,3 +74,16 @@ $("#how-slider").owlCarousel({
   dots: true,
   items: 1
 });
+// feedback-slider
+$("#feedback-slider").owlCarousel({
+  loop: true,
+  nav: true,
+  dots: false,
+  items: 1,
+  animateOut: "fadeOut",
+  mouseDrag: false,
+  navText: [
+    '<span class="material-icons">chevron_left</span>',
+    '<span class="material-icons">chevron_right</span>'
+  ]
+});
