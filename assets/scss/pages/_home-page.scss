@@ -332,6 +332,9 @@
     display: flex;
     align-items: center;
     color: $white;
+    @media (max-width:991px) {
+        height: 480px;
+    }
     .reason-inner{
         position: relative;
         h5{
@@ -343,6 +346,10 @@
             -webkit-text-stroke-width: 0.5px;
             -webkit-text-stroke-color: $primary;
             opacity: 0.8;
+            @media (max-width:991px) {
+                @include font-size(50);
+                @include absolute(-30px,null,null,0px);
+            }
         }
         h3{
             @include font-size(70);
@@ -350,6 +357,10 @@
             font-family: $titillium;
             position: relative;
             z-index: 999;
+            @media (max-width:991px) {
+                @include font-size(30);
+                line-height: 32px;
+            }
         }
         .reason-list{
             display: flex;
@@ -361,6 +372,9 @@
                 display: flex;
                 align-items: center;
                 margin-bottom: 5px;
+                @media (max-width:991px) {
+                    width:100%;
+                }
                 .material-icons{
                     color: $primary;
                     margin-right: 10px;
