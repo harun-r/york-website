@@ -60,6 +60,20 @@
             padding-left: 26px;
         }
     }
+    .owl-theme .owl-dots {
+        margin: -80px auto auto auto !important;
+        max-width: 1120px;
+        display: flex;
+        position: relative;
+        @media (min-width:1440px) {
+            max-width: 1300px;
+        }
+        @media (max-width:768px) {
+            position: absolute;
+            top: 38%;
+            padding-left: 26px;
+        }
+    }
 }
 // Hero Booking Form
 .hero-booking-form{
@@ -385,6 +399,152 @@
                     margin: 0;
                     font-size: 20px;
                     font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+// suggets-section
+.suggets-section{
+    padding: 100px 0;
+    @media (max-width:991px) {
+        padding: 40px 0;
+    }
+    .main-title{
+        margin-top: 40px;
+    }
+   .suggets-slider-wrap{
+       margin-top: 60px;
+
+       .suggets-item{
+           @include size(100%, 310px);
+           border-radius: 15px;
+           overflow: hidden;
+           position: relative;
+           .suggets-img{
+               @include size(100%,100%);
+               object-fit: cover;
+           }
+           .suggets-content{
+            @include size(100%,100%);
+            @include absolute(0,0);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgba(0,0,0,0.5);
+
+            p{
+                @include font-size(12);
+                color: $white;
+                margin: 0;
+            }
+            h3{
+                @include font-size(18);
+                font-weight: 700;
+                color: $primary;
+                margin: 0;
+            }
+            span{
+                @include font-size(14);
+                color: $white;
+            }
+            .btn-search-rounded{
+                @include size(30px,30px);
+                min-width: 30px;
+                min-height: 30px;
+                border-radius: 50px;
+                border: 2px solid $primary;
+                padding: 0;
+                @include display-center;
+                &:hover{
+                    background-color: $primary;
+                }
+                .material-icons{
+                    margin: 0;
+                }
+            }
+           }
+       }
+   }
+   .owl-carousel .owl-nav button.owl-next, 
+   .owl-carousel .owl-nav button.owl-prev {
+    @media (max-width:991px) {
+        color: $white;
+    }
+}
+}
+.slider-center{
+    .owl-carousel .owl-nav{
+        position: absolute;
+        width: 110%;
+        left: -5%;
+        top: 50%;
+        @media (max-width:991px) {
+            width:100%;
+            left: 0%;
+        }
+    }
+}
+
+// how-section
+.how-section{
+    padding: 100px 0;
+    background-color: $gray-100;
+    @media (max-width:991px) {
+        padding: 40px 0;
+    }
+    .how-left{
+        .hint-title{
+            -webkit-text-stroke-color: $primary;
+        }
+        .main-title{
+            color: $secondary;
+        }
+    }
+    .how-text{
+        display: flex;
+        align-items: center;
+        .mobile{
+            width: 300px;
+            img{
+                width: 100%;
+            }
+            @media (max-width:991px) {
+                display: none;
+            }
+        }
+        .content{
+            padding-left: 60px;
+            @media (max-width:991px) {
+                padding-left: 0px;
+                margin-top: 30px;
+            }
+            .item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+
+                .icon{
+                    min-width: 80px;
+                    display: block;
+                    img{
+                        height: 50px;
+                        width: auto;
+                    }
+                }
+                .text{
+                    h3{
+                        font-size: 20px;
+                        font-weight: 700;
+                        font-family: $titillium;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin: 0;
+                    }
                 }
             }
         }

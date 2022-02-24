@@ -26,7 +26,7 @@
         position: relative;
         padding-left: 50px;
         .hint-title{
-            @include absolute(0,null,null,0);
+            @include absolute(-20px,null,null,0);
             @include font-size(80);
             line-height: 80px;
             font-family: $titillium;
@@ -55,6 +55,17 @@
             @media (max-width:768px) {
                 @include font-size(12);
                 left: -45px;
+            }
+        }
+        .main-title{
+            @include font-size(60);
+            font-family: $titillium;
+            font-weight: 700;
+            color: $primary;
+            position: relative;
+            z-index: 999;
+            @media (max-width:768px) {
+                @include font-size(40);
             }
         }
     }

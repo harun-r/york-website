@@ -1,17 +1,5 @@
 // Owl Customize
 .owl-theme .owl-dots {
-    margin: -80px auto auto auto !important;
-    max-width: 1120px;
-    display: flex;
-    position: relative;
-    @media (min-width:1440px) {
-        max-width: 1300px;
-    }
-    @media (max-width:768px) {
-        position: absolute;
-        top: 38%;
-        padding-left: 26px;
-    }
 
     .owl-dot span {
         @include size(30px, 3px);

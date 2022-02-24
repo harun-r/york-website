@@ -42,3 +42,35 @@ $("#our-fleet-slider").owlCarousel({
     }
   }
 });
+// suggets-slider
+$("#suggets-slider").owlCarousel({
+  loop: true,
+  margin: 15,
+  nav: true,
+  dots: false,
+  navText: [
+    '<span class="material-icons">chevron_left</span>',
+    '<span class="material-icons">chevron_right</span>'
+  ],
+  responsive: {
+    0: {
+      items: 1,
+      margin: 10
+    },
+    991: {
+      items: 1,
+      margin: 10
+    },
+    1000: {
+      items: 4
+    }
+  }
+});
+// how-slider
+$("#how-slider").owlCarousel({
+  loop: true,
+  margin: 15,
+  nav: false,
+  dots: true,
+  items: 1
+});
