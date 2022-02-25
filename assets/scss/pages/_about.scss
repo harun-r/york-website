@@ -159,3 +159,46 @@
         }
     }
 }
+
+// csr-team
+.csr-team{
+    @media (max-width:991px) {
+        overflow: hidden;
+    }
+    .video{
+        margin-top: 40px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        img{
+            @include size(100%,100%);
+            object-fit: cover;
+        }
+        .video-overlay{
+            @include size(100%,100%);
+            @include absolute(0,0);
+            @include display-center;
+            background-color: rgba(0,0,0,0.5);
+            color: $white;
+            img{
+                @include size(80px,80px);
+                @media (max-width:991px) {
+                    @include size(40px,40px);
+                }
+            }
+        }
+    }
+}
+.shape-right-wrap{
+    position: relative;
+    .shape-right{
+        position: absolute;
+        right: -110px;
+        bottom: 0px;
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
+}
