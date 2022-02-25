@@ -28,13 +28,24 @@ body{
     font-family: $lato;
     @include font-size(16);
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.8;
     color: $text-color;
     background-color: $white;
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width:768px) {
+    @include font-size(14);
+    line-height: 1.4;
+  }
 }
 
+// Grid Overwrite
+.row {
+    @media (min-width: 1200px) {
+        --bs-gutter-x: 3.5rem;
+    }
+}
 /* Works on Firefox */
 * {
     scrollbar-width: thin;

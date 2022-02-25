@@ -1,0 +1,63 @@
+// Buttons
+.btn{
+    min-height: 50px;
+    padding: 8px 20px;
+    font-family: $inter;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .material-icons{
+        margin-left: 20px;
+    }
+    @media (max-width:768px) {
+        min-height: 40px;
+        padding: 6px 15px;
+        @include font-size(14);
+    }
+    // btn primary
+    &.btn-primary{
+        background-color: $primary;
+        border-color: $primary;
+        &:hover{
+            background-color: transparent;
+            color: $primary;
+        }
+    }
+    &.btn-secondary{
+        background-color: $secondary;
+        border-color: $secondary;
+        &:hover{
+            background-color: transparent;
+            color: $white;
+            border-color: $white;
+        }
+    }
+
+    &.btn-book{
+        @include align-items(center);
+        padding: 0;
+        color: $secondary;
+        @include font-size(16);
+        font-weight: 500;
+        .material-icons{
+            margin-left: 0px;
+            font-weight: 300;
+            font-size: 14px;
+        }
+        .btn-icon{
+            @include size(25px,25px);
+            min-width: 25px;
+            background-color: $secondary;
+            border-radius: 50px;
+            color: $white;
+            display: block;
+            margin-left: 5px;
+            font-weight: 300;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

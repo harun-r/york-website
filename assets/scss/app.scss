@@ -9,11 +9,16 @@
 @import './base/typography';
 
 // Layout
+@import "./layout/commons";
 
 // Components
+@import './components/buttons';
+@import './components/owl-slider';
 @import './components/forms';
 @import './components/dropdowns';
 @import './components/header';
 @import './components/footer-section';
+
 // Pages
-@import './pages/home-page'
+@import './pages/home-page';
+@import './pages/about';
