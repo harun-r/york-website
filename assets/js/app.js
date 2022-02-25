@@ -130,3 +130,25 @@ $("#core-slider").owlCarousel({
     }
   }
 });
+// yoksit-slider
+$("#yoksit-slider").owlCarousel({
+  loop: true,
+  nav: true,
+  dots: false,
+  animateOut: "fadeOut",
+  navText: [
+    '<span class="material-icons">chevron_left</span>',
+    '<span class="material-icons">chevron_right</span>'
+  ],
+  responsive: {
+    0: {
+      items: 1
+    },
+    991: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  }
+});
