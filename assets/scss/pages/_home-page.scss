@@ -579,7 +579,7 @@
             background-size: contain;
             @media (max-width:991px) {
                 margin-top: 60px;
-                padding:60px 0 0 0;
+                padding: 60px 0 0 0;
             }
             .quote{
                 position: absolute;
@@ -640,5 +640,110 @@
     }
     .owl-carousel .owl-nav {
         width: 50%;
+    }
+}
+// reserve-small
+.reserve-small{
+    padding: 60px 0;
+    background-color: $primary;
+    @media (max-width:991px) {
+        padding: 40px 0;
+    }
+    h3{
+        @include font-size(36);
+        color: $secondary;
+        font-family: $titillium;
+        font-weight: 700;
+        @media (max-width:991px) {
+            @include font-size(18);
+            margin-bottom: 30px;
+        }
+    }
+}
+
+// faq-section
+.faq-section{
+    padding: 100px 0;
+    @media (max-width:991px) {
+        padding: 40px 0;
+    }
+    .faq-img{
+        img{
+            width: 100%;
+        }
+        @media (max-width:991px) {
+            display: none;
+        }
+    }
+    .faq-img-mobile{
+        margin-top: 30px;
+        img{
+            width: 100%;
+        }
+        display: none;
+        @media (max-width:991px) {
+            display: block;
+        }
+    }
+    .common-header{
+         .common-header-inner .hint-subtitle {
+            left: 0;
+        }
+    }
+    .faq-acc .accordion{
+        margin-top: 50px;
+        margin-bottom: 60px;
+        @media (max-width:991px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .faq-more{
+        @include font-size(20);
+        font-weight: 700;
+        color: $primary;
+    }
+    .accordion-item {
+        border: none;
+        .accordion-button:not(.collapsed) {
+            color: $primary;
+            background-color: transparent;
+            box-shadow: none
+        }
+        .accordion-button{
+            padding: 6px 0;
+            @include font-size(20);
+            font-weight: 700;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .accordion-body {
+            padding: 1rem 0;
+        }
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            transform: rotate(-180deg);
+        }
+        
+    }
+}
+
+// logo-slider
+.logo-slider{
+    margin-bottom: 40px;
+    text-align: center;
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .owl-carousel .owl-item img {
+        display: block;
+        width: auto;
+        height: 40px;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 30px;
     }
 }

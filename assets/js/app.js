@@ -87,3 +87,22 @@ $("#feedback-slider").owlCarousel({
     '<span class="material-icons">chevron_right</span>'
   ]
 });
+// logo-slider
+$("#logo-slider").owlCarousel({
+  loop: true,
+  margin: 30,
+  dots: true,
+  responsive: {
+    0: {
+      items: 3,
+      margin: 5
+    },
+    991: {
+      items: 4,
+      margin: 10
+    },
+    1000: {
+      items: 6
+    }
+  }
+});
