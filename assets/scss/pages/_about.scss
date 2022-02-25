@@ -162,9 +162,6 @@
 
 // csr-team
 .csr-team{
-    @media (max-width:991px) {
-        overflow: hidden;
-    }
     .video{
         margin-top: 40px;
         width: 100%;
@@ -192,6 +189,9 @@
 }
 .shape-right-wrap{
     position: relative;
+    @media (max-width:991px) {
+        overflow: hidden;
+    }
     .shape-right{
         position: absolute;
         right: -110px;
@@ -199,6 +199,34 @@
         width: 200px;
         img{
             width: 100%;
+        }
+    }
+}
+
+// carrers-team
+.carrers-team{
+    margin-top: 40px;
+
+    .carrer-item{
+        background-color: #F7F7F7;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 999;
+        h3{
+            font-size: 20px;
+            font-family: $titillium;
+            font-weight: 600;
+        }
+        .content{
+            @media (min-width:1024px) {
+                width: 60%;
+            }
         }
     }
 }
