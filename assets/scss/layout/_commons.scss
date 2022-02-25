@@ -70,17 +70,52 @@
         }
     }
 }
+.common-header-2{
+    position: relative;
+    padding-left: 20px;
+    .hint-subtitle{
+        @include font-size(15);
+        @include absolute(0px,null,null,-30px);
+        color: $secondary;
+        display: block;
+        -webkit-transform: rotate(-90deg) translate(-50%);
+        -ms-transform: rotate(-90deg) translate(-50%);
+            transform: rotate(-90deg) translate(-50%);
+            -webkit-transform-origin: center;
+            -ms-transform-origin: center;
+                transform-origin: center;
 
+        @media (max-width:768px) {
+            @include font-size(12);
+            left: -20px;
+        }
+    }
+    .main-title{
+        @include font-size(60);
+        font-family: $titillium;
+        font-weight: 700;
+        color: $primary;
+        position: relative;
+        z-index: 999;
+        @media (max-width:768px) {
+            @include font-size(40);
+        }
+    }
+}
 // hero-small
 .hero-small{
     background-image: url("../images/banner-1.png");
     background-size: cover;
     height: 640px;
-    margin-bottom: 300px;
+    margin-bottom: 250px;
     background-position: top center;
     @media (min-width:1200px) and (max-width:1440px) {
         height: 440px;
         margin-bottom: 200px;
+    }
+    @media (max-width:991px) {
+        height: 270px;
+        margin-bottom: 650px;
     }
     .booking-full{
         background-color: #fff;
@@ -91,6 +126,10 @@
         bottom: -120%;
         @media (min-width:1200px) and (max-width:1440px) {
             bottom: -50%;
+        }
+        @media (max-width:991px) {
+            bottom: -160px;
+            padding: 15px;
         }
         .row {
             --bs-gutter-x: 1.5rem;
@@ -117,6 +156,10 @@
                 &:hover{
                     background-color: $primary;
                 }
+            }
+            @media (max-width:991px) {
+                position: static;
+                margin: 64px auto -105px auto;
             }
         }
     }

@@ -106,3 +106,27 @@ $("#logo-slider").owlCarousel({
     }
   }
 });
+// core-slider
+$("#core-slider").owlCarousel({
+  loop: true,
+  margin: 15,
+  nav: true,
+  dots: false,
+  navText: [
+    '<span class="material-icons">chevron_left</span>',
+    '<span class="material-icons">chevron_right</span>'
+  ],
+  responsive: {
+    0: {
+      items: 1,
+      margin: 10
+    },
+    991: {
+      items: 1,
+      margin: 10
+    },
+    1000: {
+      items: 4
+    }
+  }
+});
