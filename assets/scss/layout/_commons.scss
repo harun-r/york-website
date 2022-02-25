@@ -88,6 +88,9 @@
         box-shadow: 1px 14px 35px rgba(0,0,0,0.16);
         position: relative;
         bottom: -120%;
+        @media (min-width:1200px) and (max-width:1440px) {
+            bottom: -50%;
+        }
         .row {
             --bs-gutter-x: 1.5rem;
         }
