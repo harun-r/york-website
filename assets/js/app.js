@@ -6,6 +6,15 @@ $(".show-nav").click(function () {
     : $(".mobile-icon").text("close");
   return false;
 });
+// Show Tos Popup
+$(".tos-open").click(function () {
+  $(".tos-popup").addClass("show");
+  $(".tos-close").click(function () {
+    $(".tos-popup").removeClass("show");
+    return false;
+  });
+  return false;
+});
 
 // Date Picker
 $(".pick-up-date-time").datetimepicker();
