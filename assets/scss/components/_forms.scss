@@ -41,4 +41,20 @@
             padding-right: 26px;
         } 
     }
+    &.user-icon{
+        .form-control{
+            background-image: url('../images/icons/user.png');
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            padding-left: 36px;
+        } 
+    }
+    &.pass-icon{
+        .form-control{
+            background-image: url('../images/icons/lock.png');
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            padding-left: 36px;
+        } 
+    }
 }
