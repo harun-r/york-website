@@ -58,3 +58,8 @@
         } 
     }
 }
+.form-check-input {
+    @media (min-width:991px) {
+        margin-top: 0.5em;
+    }
+}
