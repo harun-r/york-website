@@ -85,15 +85,15 @@
                                         <span>Bookings</span>
                                     </a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="#">
-                                        <img class="icon" src="./assets/images/sidebar/Reservation-active.png" alt="">
+                                        <img class="icon" src="./assets/images/sidebar/Reservation.png" alt="">
                                         <span>Make a Reservation </span>
                                     </a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#">
-                                        <img class="icon" src="./assets/images/sidebar/Payment.png" alt="">
+                                        <img class="icon" src="./assets/images/sidebar/Payment-active.png" alt="">
                                         <span>Payment </span>
                                     </a>
                                 </li>
@@ -114,94 +114,209 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="dashboard-inner">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group d-flex align-items-center flex-wrap">
-                                    <div class="form-check me-4">
-                                        <input class="form-check-input" id="drop-off" type="radio" name="condition">
-                                        <label class="form-check-label" for="drop-off">
-                                            Self Drive
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" id="usage-out" type="radio" name="condition">
-                                        <label class="form-check-label" for="usage-out">
-                                            Chauffeur
-                                        </label>
+                    <section class="reservations p-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="reservation-title m-0">
+                                        <h3>
+                                             Reservations
+                                        </h3>
+                                        
                                     </div>
                                 </div>
+                                
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group map-icon">
-                                    <label class="form-label">Pick- Up </label>
-                                    <input class="form-control" type="text" placeholder="Airport">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label">Pick-Up Date & Time </label>
-                                    <input class="form-control pick-up-date-time" type="text" value="2021-04-16 14:45">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group d-flex align-items-center flex-wrap">
-                                    <div class="form-check me-4">
-                                        <input class="form-check-input" id="drop-off" type="radio" name="condition">
-                                        <label class="form-check-label" for="drop-off">
-                                            Drop-Off At Different Location
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" id="usage-out" type="radio" name="condition">
-                                        <label class="form-check-label" for="usage-out">
-                                            Usage Outside  Accra 
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label">Drop of Date & Time </label>
-                                    <input class="form-control drop-of-date-time" type="text" value="2021-04-16 14:45">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group info-icon">
-                                    <label class="form-label">Driver's Age </label>
-                                    <input class="form-control" type="text" placeholder="30 Years">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group car-icon">
-                                    <label class="form-label">Vehicle Type </label>
-                                    <input class="form-control" type="text" placeholder="SUV">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group map-icon">
-                                    <label class="form-label">Residency </label>
-                                    <input class="form-control" type="text" placeholder="SUV">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group info-icon">
-                                    <label class="form-label">Promo Code </label>
-                                    <input class="form-control" type="text" placeholder="Hjseaakko12">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-footer">
-                                    <button class="btn">
-                                        Save and Proceed 
-                                        <span class="material-icons">
-                                            arrow_right_alt
-                                        </span> 
-                                    </button>
-                                </div>
+                            <div class="row">
+                             <div class="col-md-6 order-md-2">
+                                 <div class="summary-wrap">
+                                     <div class="summary">
+                                         <div class="top">
+                                             <div class="car">
+                                                 <img src="./assets/images/car-r.png" alt="">
+                                             </div>
+                                             <div class="r-content">
+                                                 <p>
+                                                     Medium Size Sedan Cars <br>
+                                                     Hyundai-Sonata, Volkswagen CC, <br>
+                                                     Hyundai Azera or similar</p>
+                                             </div>
+                                         </div>
+                                         <div class="item">
+                                             <h3 class="title">RESERVATION SUMMARY</h3>
+                 
+                                             <div class="inner-flex">
+                                                 <div class="item-inner">
+                                                     <h3>Date &amp; Times</h3>  
+                                                     <p>Sat, 9th Oct, 10:00am</p>                     
+                                                     <p>Sun, 10th Oct, 10:00am</p>     
+                                                 </div>
+                                                 <button class="btn">EDIT</button>
+                                             </div>
+                                             <div class="inner-flex">
+                                                 <div class="item-inner">
+                                                     <h3>Pick-Up &amp; Return </h3>  
+                                                     <p>3rd Lane, Osu Oxford Strt</p>                     
+                                                     <p>3rd Lane, Osu Oxford Strt</p>     
+                                                 </div>
+                                                 <button class="btn">EDIT</button>
+                                             </div>  
+                                             <div class="inner-flex">
+                                                 <div class="item-inner">
+                                                     <h3>Reservation Type </h3>  
+                                                     <p>Self-Drive</p>                    
+                                                 </div>
+                                                 <button class="btn">EDIT</button>
+                                             </div>  
+                                         </div>
+                                         <div class="item">
+                                             <h3 class="title">PAYMENT SUMMARY</h3>
+                 
+                                             <div class="inner-flex">
+                                                 <div class="d-flex align-items-center justify-content-between">
+                                                     <p>Base Rate</p>
+                                                     <p>$208.95</p>
+                                                 </div>
+                                                 <div class="d-flex align-items-center justify-content-between">
+                                                     <p>10days @ $100 / Day</p>
+                                                     <p>$208.95</p>
+                                                 </div>
+                                                 <div class="d-flex align-items-center justify-content-between">
+                                                     <p>Insurance &amp; Addons</p>
+                                                     <p>$208.95</p>
+                                                 </div>
+                                                 <div class="d-flex align-items-center justify-content-between">
+                                                     <p>NHIL (2.5%) </p>
+                                                     <p>$208.95</p>
+                                                 </div>
+                                                 <div class="d-flex align-items-center justify-content-between">
+                                                     <p>GetFund (2.5%) </p>
+                                                     <p>$208.95</p>
+                                                 </div>
+                                                 <div class="d-flex align-items-center justify-content-between">
+                                                     <p>VAT(12.5%) </p>
+                                                     <p>$208.95</p>
+                                                 </div>
+                                                 <div class="d-flex align-items-center justify-content-between">
+                                                     <p>Tourism (1%) </p>
+                                                     <p>$208.95</p>
+                                                 </div>
+                                             </div>
+                                             
+                                         </div>
+                                     </div>
+                                     <div class="total">
+                                         <h3>TOTAL</h3>
+                                         <h3>$450.95</h3>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-md-6">
+                                 <div class="reservation-form">
+                                     <h4>PERSONAL INFORMATION</h4>
+                                     <div class="d-flex align-items-center mb-3">
+                                         <div class="form-check me-4">
+                                             <input class="form-check-input" type="radio" name="r1" id="1">
+                                             <label class="form-check-label" for="1">
+                                                 Individual
+                                             </label>
+                                         </div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" name="r1" id="2" checked="">
+                                             <label class="form-check-label" for="2">
+                                                 Company
+                                             </label>
+                                         </div>
+                                     </div>
+                                     <div class="form-box">
+                                         <div class="form-group">
+                                             <label class="form-label">Frist Name </label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                         <div class="form-group">
+                                             <label class="form-label">Last Name</label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                         <div class="form-group">
+                                             <label class="form-label">Company Name</label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                         <div class="form-group">
+                                             <label class="form-label">Email Address</label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                         <div class="form-group">
+                                             <label class="form-label">Phone Number</label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                         <div class="form-group">
+                                             <label class="form-label">Country Of Origin</label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                         <div class="form-group">
+                                             <label class="form-label">Rental Purpose</label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                         <div class="form-group">
+                                             <label class="form-label">Flight Details</label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                     </div>
+                                     <div class="">
+                                         <p>Type Of Chauffeur Service</p>
+                                     </div>
+                                     <div class="d-flex align-items-center">
+                                         <div class="form-check me-4">
+                                             <input class="form-check-input" type="radio" name="rr" id="3">
+                                             <label class="form-check-label" for="3">
+                                                 Taxi Rate
+                                             </label>
+                                         </div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" name="rr" id="4" checked="">
+                                             <label class="form-check-label" for="4">
+                                                 Airport Transfer
+                                             </label>
+                                         </div>
+                                     </div>
+                                     <div class="">
+                                         <h3>Driver Information</h3>
+                                     </div>
+                                     <div class="form-box">
+                                         <div class="form-group">
+                                             <label class="form-label">Driver’s License Number </label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                         <div class="form-group">
+                                             <label class="form-label">Expiry Date</label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                         <div class="form-group">
+                                             <label class="form-label">Upload Driver’s License</label>
+                                             <input class="form-control" type="text">
+                                         </div>
+                                     </div>
+                                     <div class="form-check agree">
+                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                         <label class="form-check-label" for="flexCheckDefault">
+                                             I agree to <a href="#">Terms and Conditions</a>
+                                         </label>
+                                     </div>
+                                     <div class="form-btn">
+                                         <button class="btn btn-secondary p-payment rounded-pill w-100">
+                                             Proceed to Payment 
+                                             <span class="material-icons">
+                                                 chevron_right
+                                             </span>    
+                                         </button>
+                                     </div>
+                 
+                                 </div>
+                             </div>
+                                
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>

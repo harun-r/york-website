@@ -1,6 +1,9 @@
 // 
 .form-group{
     margin-bottom: 12px;
+    .form-label{
+        margin-left: 12px;
+    }
     .form-label,
     .form-check-label{
         @include font-size(14);
@@ -55,6 +58,22 @@
             background-repeat: no-repeat;
             background-position: 10px center;
             padding-left: 36px;
+        } 
+    }
+    &.card-icon{
+        .form-control{
+            background-image: url('../images/dashboard/card-icon.png');
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            padding-left: 40px;
+        } 
+    }
+    &.sec-icon{
+        .form-control{
+            background-image: url('../images/dashboard/card-icon.png');
+            background-repeat: no-repeat;
+            background-position: 95% center;
+            padding-right: 40px;
         } 
     }
 }

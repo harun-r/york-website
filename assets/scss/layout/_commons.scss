@@ -352,7 +352,7 @@
                 background-color: $secondary;
                 @include display-center;
                 .material-icons{
-                    margin: 0;
+                    margin: 5px 0 0 -5px;
                     color: $white;
                 }
                 &:hover{
@@ -1417,4 +1417,280 @@
             margin-top: 40px;
         }
     }
+}
+
+// booking-item
+.booking-wrap{
+    margin-top: 50px;
+}
+.booking-item{
+    background-color: $secondary;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    color: $white;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    
+    .booking-left{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @media (max-width:991px) {
+            width: 100%;
+        }
+        .book-left-item{
+            width: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            @media (max-width:991px) {
+                width: 100%;
+            }
+            span{
+                margin-right: 15px;
+            }
+            p{
+                font-size: 12px;
+                margin-bottom: 0;
+                img{
+                    margin-right: 5px;
+                }
+            }
+            h3{
+                font-size: 14px;
+                font-weight: 700;
+                margin-top: 5px;
+            }
+        }
+    }
+    .booking-progress{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+        position: relative;
+        @media (max-width:991px) {
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        &::after{
+            content: '';
+            width: 2px;
+            height: calc(100% - 40px);
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            top: 20px;
+        }
+
+        p{
+            font-size: 12px;
+            margin: 0;
+        }
+        h3{
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .progress-item{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            &:first-child{
+                justify-content: flex-start;
+                &::after{
+                    background-color: #fff;
+                }
+            }
+            &:last-child{
+                justify-content: flex-end;
+                &::after{
+                    background-color: #fff;
+                }
+            }
+            &::after{
+                content: '';
+                width: 16px;
+                height: 16px;
+                background-color: $secondary;
+                border: 2px solid #fff;
+                border-radius: 10px;
+                position: absolute;
+                left: -26px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 9;
+            }
+            &.active{
+                &::after{
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    .booking-total{
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        p{
+            margin-bottom: 5px;
+        }
+        h3{
+            font-size: 22px;
+        }
+    }
+    &.details{
+        background-color: transparent;
+        padding: 0;
+        .booking-left{
+            width: 100%;
+            background-color: $secondary;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .booking-progress-wrap{
+            width: 100%;
+            background-color: $secondary;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 30px;
+        }
+        .booking-progress{
+            width: 100%;
+        }
+        .booking-total{
+            width: 100%;
+            background-color: $secondary;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            &.payment{
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .btn{
+                    border: 1px solid #fff;
+                    border-radius: 25px;
+                    background-color: transparent;
+                    color: #fff;
+                    font-size: 12px;
+                    padding: 0;
+                    width: 150px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+            }
+        }
+    }
+}
+
+.reservation-cards{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    .card{
+        padding:20px 30px;
+        width: 48%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        p{
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        h3{
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+}
+.reservation-form{
+    .billing-info{
+        background-color: #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+        h3{
+            margin: 0;
+            font-size: 22px;
+            font-family: $titillium;
+        }
+        img{
+            width: 150px;
+        }
+    }
+}
+
+// booking-car
+.booking-car{
+    background-color: $primary;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    .car{
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../images/dashboard/car-shapes.png");
+        background-size: cover;
+        background-position: center;
+        img{
+            width: 80%;
+        }
+    }
+    .car-content{
+        width: 35%;
+        padding: 33px 15px;
+        color: #fff;
+        h3{
+            font-size: 14px;
+            font-weight: 700;
+        }
+        h4{
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        ul{
+            margin-top: 30px;
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+// Map
+.map{
+    height: 290px;
+    iframe{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+.form-btn{
+    margin-top: 40px;
 }
