@@ -60,4 +60,16 @@
             justify-content: center;
         }
     }
+
+    &.p-payment{
+        &:hover{
+            border-color: $secondary;
+            color: $secondary;
+        }
+    }
+    &.btn-back{
+        background-color: $primary;
+        width: 256px;
+        height: 42px;
+    }
 }
