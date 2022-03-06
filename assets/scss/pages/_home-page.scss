@@ -1,12 +1,12 @@
 // Hero Booking Form
 .hero-booking{
-    height: calc(100vh - 99px);
+    height: calc(100vh - 300px);
     position: relative;
     @media (max-width:768px) {
         margin-bottom: 440px;
     }
     .hero-item{
-        @include size(100%, calc(100vh - 99px));
+        @include size(100%, calc(100vh - 300px));
         position: relative;
         img{
             @include size(100%, 100%);
@@ -77,7 +77,8 @@
 }
 // Hero Booking Form
 .hero-booking-form{
-    @include absolute(null,10%,-60px,null);
+    position: absolute;
+    bottom: -100%;
     @include size(450px, auto);
     max-width: 100%;
     z-index: 9;
@@ -85,21 +86,18 @@
     padding: 30px;
     border-radius: 5px;
     box-shadow: 1px 20px 50px rgba(0,0,0,0.17);
-    @media (min-width: 1500px) {
-        @include absolute(null,10%, 100px,null);
-    }
-    @media (max-width: 768px) {
-        width: 90%;
-        right: 5%;
-        bottom: auto;
-        top: 300px;
-    }
+    
     .booking-form{
         h3{
             font-family: $titillium;
             @include font-size(24);
             font-weight: 600;
             text-align: center;
+        }
+        .row{
+            @media (min-width: 1200px) {
+                --bs-gutter-x: 1rem;
+            }
         }
     }
     .btn-wrap{
