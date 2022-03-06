@@ -218,6 +218,9 @@
         margin-right: 20px;
         margin-bottom: 20px;
         width: 220px;
+        @media (max-width:1440px) {
+            width: 200px;
+        }
         @media (max-width:991px) {
             width: 145px;
             margin-right: 10px;
