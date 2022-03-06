@@ -386,6 +386,9 @@
             border-radius: 15px 15px 0 0;
             overflow: hidden;
             flex-wrap: wrap;
+            &.border-full{
+                border-radius: 15px;
+            }
             .item{
                 width: 20%;
                 background-color: $secondary;
@@ -495,7 +498,8 @@
         border-radius: 15px;
         padding: 40px;
         margin-bottom: 40px;
-        &:hover{
+        &:hover,
+        &.active{
             background-color: #f1f1f1;
             
         }
