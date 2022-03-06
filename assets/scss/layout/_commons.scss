@@ -208,6 +208,7 @@
 
 .price-box{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     .price-item{
         background-color: $secondary;
@@ -340,7 +341,7 @@
         background-color: #fff;
         border-radius: 15px;
         padding: 30px 150px 30px 30px;
-        box-shadow: 1px 14px 35px rgba(0,0,0,0.16);
+        box-shadow: 1px 14px 35px  rgba(0,0,0,0.16);
         position: relative;
         margin-bottom: 50px;
         @media (max-width:991px) {
@@ -357,7 +358,7 @@
             @include display-center;
             background-color: $white;
             border-radius: 50px;
-            box-shadow: 1px 14px 35px rgba(0,0,0,0.16);
+            box-shadow: 35px 0 35px rgba(0,0,0,0.16);
             transform: translateY(-50%);
             .btn-booking{
                 @include size(60px,60px);

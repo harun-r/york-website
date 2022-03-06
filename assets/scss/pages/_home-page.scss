@@ -250,6 +250,7 @@
                     color: $secondary;
                     @include font-size(13);
                     transition: color 0.3s ease-in;
+                    text-transform: uppercase;
                 }
                 &.active,
                 &:hover{
