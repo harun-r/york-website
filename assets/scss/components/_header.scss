@@ -1,6 +1,9 @@
 .header-section{
     background-color: $secondary;
     padding: 15px 0;
+    @media (min-width:991px) and (max-width:1440px) {
+        padding: 10px 0;
+    }
     .header-left{
         display: flex;
         align-items: center;
@@ -49,6 +52,9 @@
         align-items: center;
         justify-content: flex-end;
         margin-bottom: 15px;
+        @media (min-width:991px) and (max-width:1440px) {
+            margin-bottom: 0;
+        }
         @media (max-width:768px) {
             justify-content: center;
         }

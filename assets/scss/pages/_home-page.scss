@@ -3,13 +3,13 @@
     height: calc(100vh - 300px);
     position: relative;
     @media (max-width:1440px) {
-        height: calc(100vh - 240px);
+        height: calc(100vh - 200px);
     }
     .hero-item{
         @include size(100%, calc(100vh - 300px));
         position: relative;
         @media (max-width:1440px) {
-            height: calc(100vh - 240px);
+            height: calc(100vh - 200px);
         }
         img{
             @include size(100%, 100%);
@@ -23,6 +23,9 @@
             align-items: flex-end;
             @media (min-width: 1500px) {
                 padding: 100px 0 200px 0;
+            }
+            @media (min-width:991px) and (max-width:1440px) {
+                padding: 50px 0;
             }
             @media (max-width: 768px) {
                 padding:60px 15px;
@@ -68,6 +71,9 @@
         max-width: 1120px;
         display: flex;
         position: relative;
+        @media (min-width:991px) and (max-width:1440px) {
+            margin: -45px auto auto auto !important;
+        }
         @media (min-width:1440px) {
             max-width: 1300px;
         }
