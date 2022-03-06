@@ -2,12 +2,15 @@
 .hero-booking{
     height: calc(100vh - 300px);
     position: relative;
-    @media (max-width:768px) {
-        margin-bottom: 440px;
+    @media (max-width:1440px) {
+        height: calc(100vh - 240px);
     }
     .hero-item{
         @include size(100%, calc(100vh - 300px));
         position: relative;
+        @media (max-width:1440px) {
+            height: calc(100vh - 240px);
+        }
         img{
             @include size(100%, 100%);
             object-fit: cover;
@@ -70,7 +73,7 @@
         }
         @media (max-width:768px) {
             position: absolute;
-            top: 38%;
+            top: 85%;
             padding-left: 26px;
         }
     }
@@ -86,6 +89,11 @@
     padding: 30px;
     border-radius: 5px;
     box-shadow: 1px 20px 50px rgba(0,0,0,0.17);
+    @media (max-width:991px) {
+        position: static;
+        bottom: 0;
+        margin-top: -180px;
+    }
     
     .booking-form{
         h3{
