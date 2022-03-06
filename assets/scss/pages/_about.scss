@@ -91,6 +91,9 @@
                 color: $secondary;
             }
         }
+        p{
+            @include size(14);
+        }
     }
     .owl-carousel .owl-nav {
         justify-content: flex-end;
