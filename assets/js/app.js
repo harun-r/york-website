@@ -17,7 +17,7 @@ $(".tos-open").click(function () {
 });
 // btn-search
 $(".btn-search").click(function () {
-  $(".search-wrap").fadeToggle(500);
+  $(".search-wrap").toggleClass("show");
 });
 // Date Picker
 $(".pick-up-date-time").datetimepicker();
