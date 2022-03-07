@@ -1,13 +1,16 @@
 // Hero Booking Form
 .hero-booking{
-    height: calc(100vh - 99px);
+    height: calc(100vh - 300px);
     position: relative;
-    @media (max-width:768px) {
-        margin-bottom: 440px;
+    @media (max-width:1440px) {
+        height: calc(100vh - 200px);
     }
     .hero-item{
-        @include size(100%, calc(100vh - 99px));
+        @include size(100%, calc(100vh - 300px));
         position: relative;
+        @media (max-width:1440px) {
+            height: calc(100vh - 200px);
+        }
         img{
             @include size(100%, 100%);
             object-fit: cover;
@@ -20,6 +23,9 @@
             align-items: flex-end;
             @media (min-width: 1500px) {
                 padding: 100px 0 200px 0;
+            }
+            @media (min-width:991px) and (max-width:1440px) {
+                padding: 50px 0;
             }
             @media (max-width: 768px) {
                 padding:60px 15px;
@@ -65,19 +71,23 @@
         max-width: 1120px;
         display: flex;
         position: relative;
+        @media (min-width:991px) and (max-width:1440px) {
+            margin: -45px auto auto auto !important;
+        }
         @media (min-width:1440px) {
             max-width: 1300px;
         }
         @media (max-width:768px) {
             position: absolute;
-            top: 38%;
+            top: 85%;
             padding-left: 26px;
         }
     }
 }
 // Hero Booking Form
 .hero-booking-form{
-    @include absolute(null,10%,-60px,null);
+    position: absolute;
+    bottom: -100%;
     @include size(450px, auto);
     max-width: 100%;
     z-index: 9;
@@ -85,21 +95,23 @@
     padding: 30px;
     border-radius: 5px;
     box-shadow: 1px 20px 50px rgba(0,0,0,0.17);
-    @media (min-width: 1500px) {
-        @include absolute(null,10%, 100px,null);
+    @media (max-width:991px) {
+        position: static;
+        bottom: 0;
+        margin-top: -180px;
     }
-    @media (max-width: 768px) {
-        width: 90%;
-        right: 5%;
-        bottom: auto;
-        top: 300px;
-    }
+    
     .booking-form{
         h3{
             font-family: $titillium;
             @include font-size(24);
             font-weight: 600;
             text-align: center;
+        }
+        .row{
+            @media (min-width: 1200px) {
+                --bs-gutter-x: 1rem;
+            }
         }
     }
     .btn-wrap{
@@ -238,6 +250,7 @@
                     color: $secondary;
                     @include font-size(13);
                     transition: color 0.3s ease-in;
+                    text-transform: uppercase;
                 }
                 &.active,
                 &:hover{
@@ -282,11 +295,13 @@
                     margin: 20px 0;
                     @include display-flex(flex);
                     @include align-items(center);
-                    justify-content: space-between;
+                    flex-wrap: wrap;
                     width: 100%;
                     .car-fec-item{
                         @include display-flex(flex);
                         @include align-items(center);
+                        width: 33%;
+                        margin-top: 15px;
                         span{
                             @include font-size(12); 
                         }
@@ -303,6 +318,18 @@
                             }
                         }
                         &:nth-child(3){
+                            img{
+                                width: 18px;
+                                margin-right: 5px;
+                            }
+                        }
+                        &:nth-child(4){
+                            img{
+                                width: 18px;
+                                margin-right: 5px;
+                            }
+                        }
+                        &:nth-child(5){
                             img{
                                 width: 18px;
                                 margin-right: 5px;

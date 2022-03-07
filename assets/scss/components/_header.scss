@@ -1,6 +1,43 @@
 .header-section{
     background-color: $secondary;
     padding: 15px 0;
+    position: relative;
+    .search-wrap{
+        @include size(100%, 100px);
+        background-color: $white;
+        @include absolute(125px,0);
+        z-index: 9999;
+        padding: 10px 100px;
+        display: flex;
+        align-items: center;
+        display: none;
+        @media (max-width:991px) {
+            padding: 10px;
+        }
+        &.show{
+            display: flex;
+        }
+        .form-control{
+            height: 50px;
+        }
+        .btn{
+            background-color: $primary;
+            color: $white;
+            padding: 0;
+            @include display-center;
+            @include size(50px,50px);
+            .material-icons{
+                margin: 0;
+                margin-top: 5px;
+            }
+            &:hover{
+                color: $white !important;
+            }
+        }
+    }
+    @media (min-width:991px) and (max-width:1440px) {
+        padding: 10px 0;
+    }
     .header-left{
         display: flex;
         align-items: center;
@@ -49,6 +86,9 @@
         align-items: center;
         justify-content: flex-end;
         margin-bottom: 15px;
+        @media (min-width:991px) and (max-width:1440px) {
+            margin-bottom: 0;
+        }
         @media (max-width:768px) {
             justify-content: center;
         }

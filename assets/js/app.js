@@ -15,7 +15,10 @@ $(".tos-open").click(function () {
   });
   return false;
 });
-
+// btn-search
+$(".btn-search").click(function () {
+  $(".search-wrap").toggleClass("show");
+});
 // Date Picker
 $(".pick-up-date-time").datetimepicker();
 $(".drop-of-date-time").datetimepicker();
@@ -25,7 +28,8 @@ $("#hero-slider").owlCarousel({
   loop: true,
   nav: false,
   dots: true,
-  items: 1
+  items: 1,
+  autoplay: true
 });
 // Hero Slider
 $("#our-fleet-slider").owlCarousel({
@@ -33,6 +37,7 @@ $("#our-fleet-slider").owlCarousel({
   margin: 30,
   nav: true,
   dots: false,
+  autoplay: true,
   navText: [
     '<span class="material-icons">chevron_left</span>',
     '<span class="material-icons">chevron_right</span>'
@@ -57,6 +62,7 @@ $("#suggets-slider").owlCarousel({
   margin: 15,
   nav: true,
   dots: false,
+  autoplay: true,
   navText: [
     '<span class="material-icons">chevron_left</span>',
     '<span class="material-icons">chevron_right</span>'
@@ -78,6 +84,7 @@ $("#suggets-slider").owlCarousel({
 // how-slider
 $("#how-slider").owlCarousel({
   loop: true,
+  autoplay: true,
   margin: 15,
   nav: false,
   dots: true,
@@ -86,6 +93,7 @@ $("#how-slider").owlCarousel({
 // feedback-slider
 $("#feedback-slider").owlCarousel({
   loop: true,
+  autoplay: true,
   nav: true,
   dots: false,
   items: 1,
@@ -99,6 +107,7 @@ $("#feedback-slider").owlCarousel({
 // logo-slider
 $("#logo-slider").owlCarousel({
   loop: true,
+  autoplay: true,
   margin: 30,
   dots: true,
   responsive: {
@@ -118,6 +127,7 @@ $("#logo-slider").owlCarousel({
 // core-slider
 $("#core-slider").owlCarousel({
   loop: true,
+  autoplay: true,
   margin: 15,
   nav: true,
   dots: false,
@@ -142,6 +152,7 @@ $("#core-slider").owlCarousel({
 // yoksit-slider
 $("#yoksit-slider").owlCarousel({
   loop: true,
+  autoplay: true,
   nav: true,
   dots: false,
   animateOut: "fadeOut",

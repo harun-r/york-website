@@ -28,8 +28,8 @@
                             <a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a>
                         </div>
                         <div class="mobile-header">
-                            <a href="#">covid 19 update</a>
-                            <a href="#">Help</a>
+                            <a href="covid-update.html">covid 19 update</a>
+                            <a href="help.html">Help</a>
                             <a href="#" class="show-nav">
                                 <span class="material-icons mobile-icon">
                                     menu
@@ -42,8 +42,8 @@
                      <div class="header-right">
                         <div class="header-top">
                             <div class="sub-menu">
-                                <a href="#">COVID 19 UPDATE</a>
-                                <a href="#">HELP</a>
+                                <a href="covid-update.html">COVID 19 UPDATE</a>
+                                <a href="help.html">HELP</a>
                             </div>
                             <div class="language">
                                 <div class="dropdown">
@@ -78,11 +78,19 @@
                                         search
                                     </span>
                                 </button>
-                                <button class="btn btn-search">
+                                <div class="search-wrap">
+                                    <input class="form-control" type="search" placeholder="Search here..">
+                                    <button class="btn">
+                                        <span class="material-icons">
+                                            search
+                                        </span>
+                                    </button>
+                                </div>
+                                <a href="./dashboard/sign-up.html" class="btn btn-search">
                                     <span class="material-icons">
                                         account_circle
                                     </span>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div class="header-menu">
@@ -197,98 +205,106 @@
                 </div>
             </div>
         </div>
-        <div class="hero-booking-form">
-            <div class="booking-form">
-                <h3>Start You Booking</h3>
-                <form action="#">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-label">Services </label>
-                                <select class="form-select">
-                                    <option selected>Taxi Service</option>
-                                    <option value="1">Taxi Service 2</option>
-                                    <option value="2">Taxi Service 3</option>
-                                    <option value="3">Taxi Service 4</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group map-icon">
-                                <label class="form-label">Pick- Up </label>
-                                <input class="form-control" type="text" placeholder="Airport">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group map-icon">
-                                <label class="form-label">Drop-Off </label>
-                                <input class="form-control" type="text" placeholder="HO">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group map-icon">
-                                <label class="form-label">Destination </label>
-                                <input class="form-control" type="text" placeholder="Taxi Service">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group d-flex align-items-center flex-wrap">
-                                <div class="form-check me-4">
-                                    <input class="form-check-input" id="drop-off" type="radio" name="condition">
-                                    <label class="form-check-label" for="drop-off">
-                                        Drop-Off At Different Location
-                                    </label>
+    </section>
+    <div class="booking-wrap position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center justify-content-md-end">
+                    <div class="hero-booking-form">
+                        <div class="booking-form">
+                            <h3>Start You Booking</h3>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Services </label>
+                                            <select class="form-select">
+                                                <option selected>Taxi Service</option>
+                                                <option value="1">Taxi Service 2</option>
+                                                <option value="2">Taxi Service 3</option>
+                                                <option value="3">Taxi Service 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group map-icon">
+                                            <label class="form-label">Pick- Up </label>
+                                            <input class="form-control" type="text" placeholder="Airport">
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-6">
+                                        <div class="form-group map-icon">
+                                            <label class="form-label">Drop-Off </label>
+                                            <input class="form-control" type="text" placeholder="HO">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group map-icon">
+                                            <label class="form-label">Destination </label>
+                                            <input class="form-control" type="text" placeholder="Taxi Service">
+                                        </div>
+                                    </div> -->
+                                    <div class="col-md-12">
+                                        <div class="form-group d-flex align-items-center flex-wrap">
+                                            <div class="form-check me-4">
+                                                <input class="form-check-input" id="drop-off" type="radio" name="condition">
+                                                <label class="form-check-label" for="drop-off">
+                                                    Drop-Off At Different Location
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="usage-out" type="radio" name="condition">
+                                                <label class="form-check-label" for="usage-out">
+                                                    Usage Outside  Accra 
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Pick-Up Date & Time </label>
+                                            <input class="form-control pick-up-date-time" type="text" value="2021-04-16 14:45">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Drop of Date & Time </label>
+                                            <input class="form-control drop-of-date-time" type="text" value="2021-04-16 14:45">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group info-icon">
+                                            <label class="form-label">Driver's Age </label>
+                                            <input class="form-control" type="text" placeholder="30 Years">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group car-icon">
+                                            <label class="form-label">Vehicle Type </label>
+                                            <input class="form-control" type="text" placeholder="SUV">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group info-icon">
+                                            <label class="form-label">Promo Code </label>
+                                            <input class="form-control" type="text" placeholder="Hjseaakko12">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" id="usage-out" type="radio" name="condition">
-                                    <label class="form-check-label" for="usage-out">
-                                        Usage Outside  Accra 
-                                    </label>
+                                <div class="btn-wrap">
+                                    <button class="btn btn-booking">
+                                        <span class="material-icons">
+                                            chevron_right
+                                        </span>
+                                    </button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Pick-Up Date & Time </label>
-                                <input class="form-control pick-up-date-time" type="text" value="2021-04-16 14:45">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Drop of Date & Time </label>
-                                <input class="form-control drop-of-date-time" type="text" value="2021-04-16 14:45">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group info-icon">
-                                <label class="form-label">Driver's Age </label>
-                                <input class="form-control" type="text" placeholder="30 Years">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group car-icon">
-                                <label class="form-label">Vehicle Type </label>
-                                <input class="form-control" type="text" placeholder="SUV">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group info-icon">
-                                <label class="form-label">Promo Code </label>
-                                <input class="form-control" type="text" placeholder="Hjseaakko12">
-                            </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="btn-wrap">
-                        <button class="btn btn-booking">
-                            <span class="material-icons">
-                                chevron_right
-                            </span>
-                        </button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Service Header -->
     <section class="big-header common-header">
         <div class="container">
