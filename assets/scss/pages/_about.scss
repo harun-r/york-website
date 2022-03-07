@@ -74,7 +74,8 @@
         border-radius: 10px;
         border-bottom: 5px solid $primary;
         padding: 30px;
-        min-height: 300px;
+        min-height: 330px;
+        max-height: 330px;
         .top{
             height: 150px;
             display: flex;
@@ -229,6 +230,12 @@
         .content{
             @media (min-width:1024px) {
                 width: 60%;
+            }
+        }
+        .btn{
+            &:hover{
+                border-color: $secondary !important;
+                color: $secondary !important;
             }
         }
     }

@@ -295,11 +295,13 @@
                     margin: 20px 0;
                     @include display-flex(flex);
                     @include align-items(center);
-                    justify-content: space-between;
+                    flex-wrap: wrap;
                     width: 100%;
                     .car-fec-item{
                         @include display-flex(flex);
                         @include align-items(center);
+                        width: 33%;
+                        margin-top: 15px;
                         span{
                             @include font-size(12); 
                         }
@@ -316,6 +318,18 @@
                             }
                         }
                         &:nth-child(3){
+                            img{
+                                width: 18px;
+                                margin-right: 5px;
+                            }
+                        }
+                        &:nth-child(4){
+                            img{
+                                width: 18px;
+                                margin-right: 5px;
+                            }
+                        }
+                        &:nth-child(5){
                             img{
                                 width: 18px;
                                 margin-right: 5px;
